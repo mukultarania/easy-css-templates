@@ -1,0 +1,40 @@
+/* This code sets the layout and styling for a webpage, including a full-screen background color, a colored element at the bottom, and a white overlay. */
+#main {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  font-family: "Belanosima", sans-serif;
+  font-family: "Ysabeau SC", sans-serif;
+}
+
+#fs {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(52, 52, 52);
+}
+
+#fs-text {
+  width: 100%;
+  height: 100%;
+  color: #fefcfc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+}
+
+#elem {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  height: 0px;
+  background-color: aquamarine;
+}
+
+#white {
+  width: 100%;
+  height: 0;
+  position: absolute;
+  bottom: 0;
+  background-color: #dadada;
+}
