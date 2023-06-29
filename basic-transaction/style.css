@@ -1,4 +1,21 @@
 /* This code sets the layout and styling for a webpage, including a full-screen background color, a colored element at the bottom, and a white overlay. */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Belanosima", sans-serif;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+#main {
+  width: 100%;
+}
+
 #main {
   position: relative;
   width: 100%;
