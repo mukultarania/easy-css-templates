@@ -1,3 +1,4 @@
+/* The code snippet sets up the styling for a webpage. It sets the margin, padding, font family, and box-sizing for all elements. It also sets the width and height for the html and body elements. It defines the styles for the #main */
 * {
   margin: 0;
   padding: 0;
@@ -31,9 +32,37 @@ body {
 }
 
 #nav a {
+  position: relative;
   text-decoration: none;
   text-transform: uppercase;
-  font-weight: 300;
-  font-size: 15px;
   color: black;
+}
+
+#nav a .line {
+  position: absolute;
+  bottom: 0;
+  display: inline-block;
+  height: 1px;
+  background-color: black;
+}
+
+#line2 {
+  left: 0;
+  width: 0;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+  transition-delay: .1s;
+}
+
+#line1 {
+  right: 0;
+  width: 100%;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+}
+
+#nav a:hover #line2 {
+  width: 100%;
+}
+
+#nav a:hover #line1 {
+  width: 0;
 }
