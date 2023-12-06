@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+#main {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  grid-template-rows: 26% 56% 18%;
+  grid-template-columns: 25% 25% 50%;
+  background-color: #dadada;
+}
+
+#left-top-left {
+  padding: 30px;
+}
+#square {
+  height: 12px;
+  width: 12px;
+  rotate: 45deg;
+  background-color: black;
+}
+
+#left-top-right {
+  justify-self: right;
+  text-align: right;
+  font-size: small;
+  padding: 20px;
+}
+#left-top-right h4 {
+  margin-bottom: 30px;
+  font-size: 15px;
+  font-weight: 500;
+}
+#left-top-right h5 {
+  font-size: 10px;
+  font-weight: 500;
+  color: #333;
+}
+
+#left-center {
+  grid-column: 1/3;
+  padding: 20px;
+  padding-left: 20%;
+}
+#left-center h1 {
+  font-size: 6vw;
+  text-transform: uppercase;
+  line-height: 5vw;
+  font-weight: 100;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#left-center h1:nth-child(2n) {
+  text-align: center;
+}
+
+#left-bottom {
+  grid-column: 1/3;
+}
+#right {
+  grid-column: 3;
+  grid-row: 1 / 4;
+  padding: 20px;
+  padding-right: 10%;
+}
+
+#right video{
+    width: 100%;
+    height: 100%;
+    object-fit:cover ;
+}
+
