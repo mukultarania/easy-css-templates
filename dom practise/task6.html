@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>Task 6- Creating Tabs - It will switch content</h2>
+    <button class="tab">Home</button>
+    <button class="tab">About</button>
+    <button class="tab">Contact</button>
+    <h3 style="display: none">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum quod
+      inventore odit, repellendus ipsa molestiae perspiciatis cupiditate ipsam
+      quia veniam veritatis aut expedita suscipit! Cum odio, provident totam
+      libero nulla reprehenderit autem ea vitae quia animi, dolore fuga omnis
+      dolorem!
+    </h3>
+    <h3 style="display: none">
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem sint
+      voluptatem earum velit consequuntur voluptatum, temporibus eius, eveniet
+      consectetur quam pariatur vel. Inventore quia perspiciatis vero delectus
+      necessitatibus quaerat sit aliquam, sint nihil vel optio minus eos! Vitae,
+      laboriosam ea!
+    </h3>
+    <h3 style="display: none">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
+      deserunt fuga molestiae iste veniam, eum omnis deleniti provident ut
+      repudiandae.
+    </h3>
+    <script>
+      var buts = document.querySelectorAll(".tab");
+      var text = document.querySelectorAll("h3");
+      text[0].style.display = "block";
+      text[0].style.width = "50%";
+      buts.forEach(function (but, ind) {
+        but.addEventListener("click", () => {
+          hideAll();
+          text[ind].style.display = "block";
+          text[ind].style.width = "50%";
+        });
+      });
+      function hideAll() {
+        text.forEach((tx) => {
+          tx.style.display = "none";
+        });
+      }
+    </script>
+  </body>
+</html>

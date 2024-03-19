@@ -1,6 +1,7 @@
 * {
   width: 100%;
   height: 100%;
+  box-sizing: border-box;
 }
 
 html,
@@ -21,8 +22,9 @@ body {
 
 #nav {
   width: 100%;
-  height: 13vh;
+  height: 70px;
   margin-top: 20px;
+  padding: 0px 40px;
   border-top: 2px solid black;
   border-bottom: 2px solid black;
   /* background-color: red; */
@@ -34,7 +36,6 @@ body {
 #nav h3 {
   height: 100%;
   width: 12%;
-  padding-left: 30px;
   /* background-color: yellow; */
   display: flex;
   align-items: center;
@@ -61,17 +62,20 @@ body {
 }
 
 #center {
-  height: 100%;
-  width: 100%;
+  height: calc(100% - 90px);
+  width: 100%; /* Adjusted to accommodate padding */
   position: relative;
-  padding: 15px;
-  background-color: red;
-  padding: 20px;
+  padding: 20px 40px;
 }
 
 #content {
   width: 100%;
   height: 100%;
   position: relative;
+  object-fit: cover;
   background-color: blue;
+}
+
+#content video {
+    object-fit: cover;
 }
