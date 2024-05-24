@@ -1,0 +1,26 @@
+#box1 {
+    width: 70px;
+    height: 70px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: crimson;
+}
+
+#boxl {
+    display: none;
+}
+
+#boxt1 {
+    margin: 10px;
+    width: 70px;
+    height: 70px;
+    background-color: crimson;
+}
+#boxt2 {
+    margin: 10px;
+    width: 70px;
+    height: 70px;
+    background-color: blue;
+}
